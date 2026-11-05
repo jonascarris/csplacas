@@ -314,19 +314,19 @@ section {
 /* ===== NAV ===== */
 .nav {
   position: fixed;
-  top: 1.1rem;
+  top: 1.2rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 60;
   display: flex;
   align-items: center;
-  gap: 1.6rem;
-  padding: 0.45rem 0.45rem 0.45rem 1.1rem;
+  gap: 2rem;
+  padding: 0.65rem 0.75rem 0.65rem 1.4rem;
   border-radius: 999px;
-  background: rgba(17, 17, 16, 0.75);
-  backdrop-filter: blur(18px) saturate(1.4);
-  -webkit-backdrop-filter: blur(18px) saturate(1.4);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+  background: rgba(17, 17, 16, 0.88);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 20px 50px -20px rgba(0, 0, 0, 0.7);
   width: max-content;
   max-width: calc(100% - 2rem);
 }
@@ -334,11 +334,11 @@ section {
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.7rem;
 }
 
 .brand img {
-  height: 34px;
+  height: 42px;
   width: auto;
   transition: transform 0.3s var(--ease);
 }
@@ -349,42 +349,44 @@ section {
 
 .nav ul {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.8rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .nav ul a {
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--text-dim);
+  font-size: 0.96rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--bone);
   transition: color 0.3s var(--ease);
 }
 
 .nav ul a:hover {
-  color: var(--bone);
+  color: var(--gold);
 }
 
 .nav .btn {
-  padding: 0.35rem 0.4rem 0.35rem 1.05rem;
-  font-size: 0.8rem;
+  padding: 0.45rem 0.5rem 0.45rem 1.2rem;
+  font-size: 0.92rem;
+  font-weight: 700;
   box-shadow: none;
 }
 
 .nav .btn .ic {
-  width: 1.9rem;
-  height: 1.9rem;
+  width: 2.2rem;
+  height: 2.2rem;
 }
 
 .burger {
   display: none;
   position: relative;
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 2.8rem;
+  height: 2.8rem;
   border-radius: 50%;
   border: 0;
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.08);
   cursor: pointer;
 }
 
@@ -488,7 +490,7 @@ section {
   min-height: 100dvh;
   display: flex;
   align-items: center;
-  padding: 8.5rem 0 5rem;
+  padding: 10rem 0 5rem;
   overflow: hidden;
   background: radial-gradient(60rem 40rem at 85% 20%, rgba(255, 193, 7, 0.08), transparent 60%),
     radial-gradient(50rem 30rem at 0% 100%, rgba(255, 255, 255, 0.035), transparent 60%),
@@ -1564,37 +1566,81 @@ footer {
 
 .foot {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1.1fr 1.1fr 0.9fr;
   gap: 2.5rem;
 }
 
 .foot img {
-  height: 44px;
+  height: 48px;
   width: auto;
   margin-bottom: 1.4rem;
 }
 
 .foot p {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--text-dim);
   max-width: 20rem;
+  line-height: 1.6;
+}
+
+.foot-loc {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line-d);
+  font-size: 0.78rem;
+  color: var(--bone);
+  font-weight: 500;
+}
+
+.foot-loc svg {
+  width: 1rem;
+  height: 1rem;
+  color: var(--gold);
+  flex-shrink: 0;
 }
 
 .foot h4 {
-  margin: 0 0 1.1rem;
-  font-size: 0.65rem;
+  margin: 0 0 1.2rem;
+  font-size: 0.7rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--text-faint);
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.foot-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: var(--bone);
+  padding: 0.4rem 0;
+  transition: color 0.3s var(--ease);
+}
+
+.foot-item:hover {
+  color: var(--gold);
+}
+
+.foot-item svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  color: var(--gold);
+  flex-shrink: 0;
 }
 
 .foot a {
   display: block;
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   color: var(--text-dim);
-  padding: 0.22rem 0;
+  padding: 0.28rem 0;
   transition: color 0.3s var(--ease);
 }
 
@@ -1604,10 +1650,11 @@ footer {
 
 .foot small {
   display: block;
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   color: var(--text-faint);
   margin-top: -0.1rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.85rem;
 }
 
 .legal {
@@ -1813,8 +1860,13 @@ footer {
     --pad: 1rem;
   }
 
+  .nav {
+    padding: 0.5rem 0.6rem 0.5rem 1rem;
+    gap: 0.8rem;
+  }
+
   .brand img {
-    height: 28px;
+    height: 32px;
   }
 
   .eyebrow {
