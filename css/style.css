@@ -1549,11 +1549,38 @@ section {
 }
 
 .qr p {
-  margin: 0.9rem 0 0;
+  margin: 0.9rem 0 0.6rem;
   font-size: 0.75rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-faint);
+}
+
+.qr-ig-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--bone);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line-d);
+  transition: all 0.3s var(--ease);
+}
+
+.qr-ig-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--gold);
+  border-color: rgba(255, 193, 7, 0.3);
+}
+
+.qr-ig-link svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  color: var(--gold);
 }
 
 /* ===== FOOTER ===== */
@@ -1670,7 +1697,7 @@ footer {
 }
 
 .stripe {
-  height: 6px;
+  height: 8px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 2rem;
