@@ -1,19 +1,19 @@
 (() => {
   'use strict';
 
-  // 11 Categorias do Cliente com Norma/Destaque técnico
+  // Categorias do Cliente com Norma Técnica e Aplicação
   const cats = [
-    { prefix: "Placas de", name: "Segurança", norm: "ABNT NBR 13434", query: "Placas de Segurança" },
-    { prefix: "Placas para", name: "Condomínios", norm: "Alto Padrão / Portarias", query: "Placas para Condomínios" },
-    { prefix: "Placas de", name: "Identificação", norm: "Salas, Blocos e Andares", query: "Placas de Identificação" },
+    { prefix: "Placas para", name: "Condomínios", norm: "Portarias, Blocos e Garagem", query: "Placas para Condomínios" },
+    { prefix: "Placas de", name: "Identificação", norm: "Salas, Andares e Setores", query: "Placas de Identificação" },
     { prefix: "Placas de", name: "Estacionamento", norm: "Vagas, Sentido e Vagas PCD", query: "Placas de Estacionamento" },
-    { prefix: "Placas", name: "Fotoluminescentes", norm: "CBMERJ / NBR 13434", query: "Placas Fotoluminescentes" },
+    { prefix: "Placas de", name: "Rota de Fuga", norm: "CBMERJ / ABNT NBR 16820", query: "Placas de Rota de Fuga" },
     { prefix: "Placas de", name: "Extintores e Hidrantes", norm: "Norma Bombeiros CBMERJ", query: "Placas de Extintores e Hidrantes" },
     { prefix: "Placas de", name: "Acessibilidade", norm: "NBR 9050 / Braille", query: "Placas de Acessibilidade" },
+    { prefix: "Placas de", name: "Segurança", norm: "ABNT NBR 16820", query: "Placas de Segurança" },
     { prefix: "Placas de", name: "Perigo e Advertência", norm: "NR-26 / Segurança do Trabalho", query: "Placas de Perigo e Advertência" },
     { prefix: "Placas de", name: "Atenção", norm: "Sinalização Preventiva", query: "Placas de Atenção" },
     { prefix: "Placas de", name: "Cuidado", norm: "Manutenção e Obras", query: "Placas de Cuidado" },
-    { prefix: "Placas de", name: "Aviso", norm: "Regulamentos e Diretrizes", query: "Placas de Aviso" }
+    { prefix: "Placas de", name: "Aviso", norm: "Regulamentos e Normas Internas", query: "Placas de Aviso" }
   ];
 
   const arrowSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
