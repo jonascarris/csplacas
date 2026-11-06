@@ -700,27 +700,26 @@ section {
   text-align: center;
 }
 
-.photo {
+/* Placa de saída (fotoluminescente) em SVG */
+.exit {
   left: 9%;
   width: 42%;
   top: 76%;
-  aspect-ratio: 698 / 332;
+  aspect-ratio: 300 / 120;
   height: auto;
-  border-radius: 4px;
   padding: 0;
   display: block;
-  background: transparent;
-  box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.7);
-  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 0 34px -6px rgba(120, 255, 160, 0.22),
+    0 30px 40px -18px rgba(0, 0, 0, 0.75),
+    0 12px 18px -10px rgba(0, 0, 0, 0.55);
 }
 
-.photo picture,
-.photo img {
+.exit svg {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: fill;
-  display: block;
-  border-radius: 4px;
 }
 
 .wall-tag {
